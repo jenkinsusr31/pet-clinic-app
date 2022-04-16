@@ -13,7 +13,7 @@ pipeline {
         
         stage('Copy Artifact') {
            steps { 
-		            bat 'copy -r target/*.jar docker'
+		            bat 'copy -rf target/*.jar docker'
            }
         }
     }
